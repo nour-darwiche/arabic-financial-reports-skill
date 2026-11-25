@@ -2,9 +2,9 @@
 
 ## Visual spec
 
-**Brand color is a per-report parameter, never hardcoded.** Each company gets its own base
-color: state it explicitly when starting a new report (e.g. "dark green" for one company, "navy
-blue" for another). Derive four shades from whatever base color is given, keeping this structure:
+**Brand color is a per-report parameter, never hardcoded.** Each company can have its own base
+color (e.g. "dark green" for one company, "navy blue" for another). Derive four shades from
+whatever base color is given, keeping this structure:
 
 - **Dark anchor** (headers, cover title, section headings): the base color at near-full saturation/darkness
 - **Mid accent** (accent rules, chart primary series, highlight text): the base color, one step lighter
@@ -17,8 +17,14 @@ Keep red for negative/warning figures and green for positive/favorable **regardl
 color**: that's a separate, universal signal (variance coloring) and shouldn't be swallowed by a
 rebrand, including when the brand color itself is green.
 
-**Confirm before generating a full draft:**
-- The exact base color (a name like "navy blue" is enough; pick specific hex values and confirm, or ask for exact hex if precision matters).
+**Choosing the color: don't block on it.**
+- If the user names a color or brand, use it (a name like "dark green" is enough; pick the hex yourself).
+- Otherwise use the default **navy `#1F4E79`** without asking. Navy is the conventional finance
+  color, prints well in grayscale, and leaves green and red free to mean favorable/unfavorable.
+- When handing over the draft, add one line saying the color is the default and can be changed
+  with any color name or hex. A change is one parameter and a rebuild; nothing else moves.
+
+**Confirm before generating a full draft** (these affect correctness, not taste):
 - Whether to include an author/prepared-by line, and what it should say (don't default to a specific person's name unless told to).
 - Whether the running header repeats the company name or just the report title (both reasonable; ask if unclear).
 - The exact legal/brand company name to use; don't let a stale name from a raw source file leak into the output.
