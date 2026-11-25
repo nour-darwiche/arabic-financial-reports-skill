@@ -21,8 +21,9 @@ rebrand, including when the brand color itself is green.
 - If the user names a color or brand, use it (a name like "dark green" is enough; pick the hex yourself).
 - Otherwise use the default **navy `#1F4E79`** without asking. Navy is the conventional finance
   color, prints well in grayscale, and leaves green and red free to mean favorable/unfavorable.
-- When handing over the draft, add one line saying the color is the default and can be changed
-  with any color name or hex. A change is one parameter and a rebuild; nothing else moves.
+- In the chat message that hands over the draft (never inside the PDF), add one line saying the
+  color is the default and can be changed with any color name or hex. A change is one parameter
+  and a rebuild; nothing else moves.
 
 **Confirm before generating a full draft** (these affect correctness, not taste):
 - Whether to include an author/prepared-by line, and what it should say (don't default to a specific person's name unless told to).
