@@ -76,6 +76,9 @@ Adapt to what the source data actually supports; don't force a chapter with noth
 - **No AI-generic phrasing.** No hedge-everything language, no stock transitions, no restating the
   obvious. Write like a sharp, confident analyst briefing a manager: direct where the data
   supports it, hedged only where it genuinely should be.
+- **No meta text in the report.** Nothing about how it was made: no "test", "sample", "generated
+  by", tool or AI mentions, and no disclaimers such as "not investment advice", unless the user
+  asks for them. Notes about the process or the default color belong in the chat message.
 - **Formal professional Arabic (MSA)** unless a more colloquial register has been explicitly
   confirmed as right for this deliverable.
 - Keep English technical terms only where natural and expected (Budget, Actual, KPI, YTD); don't

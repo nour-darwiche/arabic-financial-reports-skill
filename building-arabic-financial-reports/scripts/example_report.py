@@ -202,8 +202,6 @@ def build(d, out_pdf, base_color):
               Paragraph(A.ar(REPORT_AR), cov(17, pal['mid'])),
               Spacer(1, 8),
               Paragraph(A.ar(f'الفترة {PERIOD_AR}'), cov(12, pal['dark'], True)),
-              Spacer(1, 6 * cm),
-              Paragraph(A.ar('بيانات توضيحية لشركة وهمية'), cov(9, '#6C757D')),
               NextPageTemplate('Body'), PageBreak()]
 
     # TOC
@@ -313,7 +311,6 @@ def build(d, out_pdf, base_color):
         'العملة الدولار الأميركي. الأرقام السالبة بين قوسين.',
         'تم التحقق من أن عمود المجموع يساوي مجموع الأشهر، وأن إيرادات المناطق تطابق إيرادات قائمة الدخل.'
         if not d['checks'] else 'تنبيه: ' + ' · '.join(d['checks']),
-        'جميع الأرقام في هذا التقرير وهمية لأغراض العرض فقط.',
     ]
     for n in notes:
         story.append(A.ArPara('· ' + n))
